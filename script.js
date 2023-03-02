@@ -2,14 +2,11 @@ const choices = ["rock","paper","scissors"]
 const winners = [];
 
 function game() {
-    for (let i = 1; i <= 5; i++) {
+    for (let i = 1; i <= 2; i++) {
         playRound(i);
         
-    }
+                }
     logwins();
-    //play the game
-    //play five rounds
-    //console based
 }
 
 function playRound(round) {
@@ -23,29 +20,11 @@ function playRound(round) {
  
 function playerChoice() {
     //get input from player
-    let input = prompt ("Type Rock, Paper or Scissors");
-    
-    while (input == null) {
-        input = prompt ("Type Rock, Paper or Scissors");
-        
-    }
-    input = input.toLocaleLowerCase();
-    let check = validateInput(input);
- 
-    while (check == false) {
-        input = prompt ("Type Rock, Paper or Scissors. Spelling needs to be exact but capitalisation doesn't matter");
-       
-    
-    while (input == null) {
-        input = prompt ("Type Rock, Paper or Scissors");
+    let input = prompt ("Type Rock, Paper or Scissors");{
+
+//Use buttons and event listeners to get Click on user choice
 
     }
-
-input = input.toLocaleLowerCase();
-check = validateInput(input);
-    }
-    return input;
-
 }
 function computerChoice() {
     return choices[Math.floor(Math.random()*choices.length)]
